@@ -1,4 +1,3 @@
-// uxhtop.c - Advanced Unix Task Manager (NO MORE TAB - Menu Based)
 // Build: gcc -O2 -Wall -Wextra -std=c11 uxhtop.c -lncurses -lm -o uxhtop
 
 #define _GNU_SOURCE
