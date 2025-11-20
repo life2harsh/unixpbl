@@ -1,4 +1,4 @@
-// gcc -O2 -Wall -Wextra -std=c11 uxhtop.c -lncurses -lm -o uxhtop
+// gcc -O2 -Wall -Wextra -std=c11 neotop.c -lncurses -lm -o neotop
 
 #define _GNU_SOURCE
 #define _POSIX_C_SOURCE 200809L
@@ -817,7 +817,7 @@ static void draw_main(void) {
 
   attron(COLOR_PAIR(C_HEADER) | A_BOLD);
   mvhline(0, 0, ' ', W);
-  mvprintw(0, 2, "uxhtop");
+  mvprintw(0, 2, "Neotop");
   mvhline(H - 1, 0, ' ', W);
   mvprintw(H - 1, 2, "↑/↓ j/k: Select  Enter: Open  q: Quit/Back");
   attroff(COLOR_PAIR(C_HEADER) | A_BOLD);
@@ -1333,7 +1333,7 @@ static void draw_about(void) {
   attroff(COLOR_PAIR(C_MAGENTA) | A_BOLD);
 
   attron(COLOR_PAIR(C_WHITE) | A_BOLD);
-  mvprintw(2, info_x, "uxhtop - Advanced Unix Task Manager");
+  mvprintw(2, info_x, "Neotop - Top, but better.");
   attroff(COLOR_PAIR(C_WHITE) | A_BOLD);
   mvprintw(3, info_x, "System: %s", distro);
   mvprintw(4, info_x, "Kernel: %s", kernel_rel);
